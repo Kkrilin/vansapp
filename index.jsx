@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Provider } from "react-redux";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Vans from "./pages/Vans";
 import "./server";
+import store from "./pages/store/index";
 
 function App() {
   return (
@@ -14,8 +16,8 @@ function App() {
           #VanLife
         </Link>
         <nav>
-          <Link to="/vans">Vans</Link>
           <Link to="/about">About</Link>
+          <Link to="/vans">Vans</Link>
         </nav>
       </header>
       <Routes>
@@ -27,4 +29,8 @@ function App() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);

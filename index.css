@@ -1,12 +1,13 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #FFF7ED;
-    font-family: "Inter", sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff7ed;
+  font-family: "Inter", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -19,127 +20,228 @@ body {
 }
 
 header {
-    height: 110px;
-    display: flex;
-    align-items: center;
-    padding-block: 10px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  padding-block: 10px;
 }
 
 header .site-logo {
-    color: black;
-    margin-right: auto;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 25px;
+  color: black;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
 }
 
 header a {
-    text-decoration: none;
-    color: #4D4D4D;
-    font-weight: 600;
-    padding: 5px 20px;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 600;
+  padding: 5px 20px;
 }
 
 header a:hover {
-    color: #161616;
-    text-decoration: underline;
+  color: #161616;
+  text-decoration: underline;
 }
 
 .link-button {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    padding: .75rem 1.375rem;
-    color: initial;
-    font-weight: 700;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform .1s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 0.75rem 1.375rem;
+  color: initial;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
 }
 
 .link-button:hover {
-    transform: translate(1px, 1px);
+  transform: translate(1px, 1px);
 }
 
 /*** HOME PAGE ***/
 .home-container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/images/home-hero.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 350px;
-    color: white;
-    padding: 45px 23px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    url("./assets/images/home-hero.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 350px;
+  color: white;
+  padding: 45px 23px;
 }
 
 .home-container h1 {
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 42px;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 42px;
 }
 
 .home-container p {
-    line-height: 24px;
+  line-height: 24px;
 }
 
 .home-container a {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    background-color: #FF8C38;
-    border: none;
-    width: 100%;
-    margin-top: 27px;
-    padding-block: .75rem;
-    color: white;
-    font-weight: 700;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform .1s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff8c38;
+  border: none;
+  width: 100%;
+  margin-top: 27px;
+  padding-block: 0.75rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
 }
 
 .home-container a:hover {
-    transform: translate(1px, 1px);
+  transform: translate(1px, 1px);
 }
-
 
 /*** ABOUT PAGE ***/
 .about-hero-image {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .about-page-content {
-    padding-inline: 23px;
-    color: #161616;
-    margin-bottom: 55px;
+  padding-inline: 23px;
+  color: #161616;
+  margin-bottom: 55px;
 }
 
 .about-page-content h1 {
-    line-height: 38px;
+  line-height: 38px;
 }
 
 .about-page-content p {
-    line-height: 22px;
+  line-height: 22px;
 }
 
 .about-page-cta {
-    background-color: #FFCC8D;
-    color: #161616;
-    padding-inline: 32px;
-    padding-bottom: 32px;
-    margin-inline: 27px;
-    border-radius: 5px;
+  background-color: #ffcc8d;
+  color: #161616;
+  padding-inline: 32px;
+  padding-bottom: 32px;
+  margin-inline: 27px;
+  border-radius: 5px;
 }
 
 .about-page-cta h2 {
-    margin: 0;
-    padding-block: 37px;
+  margin: 0;
+  padding-block: 37px;
 }
 
 .about-page-cta .link-button {
-    background-color: #161616;
-    color: white;
-    border-radius: 10px;
+  background-color: #161616;
+  color: white;
+  border-radius: 10px;
+}
+
+/* styling of vans page */
+.van-type {
+  display: flex;
+  margin-left: 40px;
+  gap: 35px;
+  /* justify-content: space-around; */
+}
+.van-type > p {
+  background-color: #efd1ad;
+  padding: 8px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 2px #efd1ad;
+}
+.van-type p:hover {
+  background-color: #f38434;
+}
+
+.van-type .focus {
+  background-color: #f38434;
+}
+
+.van-type button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-decoration-line: underline;
+}
+.van-type button:hover {
+  color: #f38434;
+}
+
+.vans {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  gap: 20px;
+  animation: showvans 2s ease-in forwards;
+  opacity: 0;
+}
+@keyframes showvans {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.vans .van {
+  width: 300px;
+  height: 390px;
+  /* overflow: hidden; */
+}
+.vans .van img {
+  border-radius: 5px;
+  width: 300px;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.vans .van-info {
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: 1fr 0.6fr;
+}
+
+.vans .van-info h2 {
+  font-size: 20px;
+}
+
+.vans .van-info h3 {
+  justify-self: flex-end;
+}
+.vans .van-info h3 span {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.vans .van-info p {
+  color: white;
+  border-radius: 5px;
+  padding: 5px 8px;
+  width: max-content;
+}
+.vans .van-info .simple {
+  margin: 0;
+  background-color: #ff8c38;
+}
+
+.vans .van-info .rugged {
+  margin: 0;
+  background-color: green;
+}
+.vans .van-info .luxury {
+  margin: 0;
+  background-color: black;
 }
